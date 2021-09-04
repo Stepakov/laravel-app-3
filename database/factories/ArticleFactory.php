@@ -30,8 +30,9 @@ class ArticleFactory extends Factory
             'title' => $title,
             'slug' => $slug,
             'body' => $this->faker->paragraph( 100, false ),
-            'img' => 'https://via.placeholder/600/333/fff/?text=' . $title,
-            'published_at' => Carbon::now()
+            'img' => 'https://via.placeholder.com/600/333/fff/?text=' . $title,
+            'created_at' => $this->faker->dateTimeBetween( '-1 years' ),
+            'published_at' => Carbon::now(),
         ];
     }
 }

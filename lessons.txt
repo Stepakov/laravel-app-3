@@ -5,3 +5,9 @@ php artisan make:model State -mf
 php artisan make:model Tag -mf
 php artisan make:model Comment -mf
 php artisan make:migration create_article_tag_table
+
+composer require barryvdh/laravel-debugbar --dev
+composer require --dev barryvdh/laravel-ide-helper
+composer require laravel/ui
+
+
